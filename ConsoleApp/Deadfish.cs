@@ -4,8 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// ✔️ Выполненно ✔️
+
 namespace ConsoleApp
 {
+    
+
     public class Deadfish
     {
         public int[] Parse(string data)

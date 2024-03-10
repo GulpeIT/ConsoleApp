@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// ✔️ Выполненно ✔️
+
 namespace ConsoleApp
 {
-    public class CorrectIPAddress
+    public class Correct_IP_Address
     {
         public bool is_valid_IP(string ipAddres)
         {

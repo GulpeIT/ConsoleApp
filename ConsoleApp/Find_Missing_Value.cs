@@ -4,7 +4,10 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
+
+// ✔️ Выполнено ✔️
 
 /*
  An Arithmetic Progression is defined as one in which there is a constant difference between the consecutive terms of a given series of numbers.
@@ -24,37 +27,24 @@ Kata.FindMissing(new List<int> {1, 3, 5, x, 9, 11}) => 7
                                  4     2
                                 0     1  2
 Kata.FindMissing(new List<int> {1, x, 5, 7}) => 3
-
-Операция с 4
-int temp = |1 - 5| (4)
-
-1 + 4 ?= 5 | true;
-5 + 4 ?= 7 | false;
-
-Операция с 2
-int temp = |5 - 7| (2)
-
-1 + 2 ?= 3 | false;
-5 + 2 ?= 7 | true;
-
-
 */
 
 namespace ConsoleApp
 {
-    internal class FindMissingValue
+    internal class Find_Missing_Value
     {
         public int FindMissing(List<int> list)
         {
-            int difference = 0;
-            int definition = 0;
-
-
-            for (int i = 0; i < list.ToArray().Length - 1; i++)
+            for (int i = 0; i < list.ToArray().Length - 1;)
             {
-                difference = list[i + 1] - list[i];
-                definition = list[i] + difference;
-            
+                int difference = list[i + 1] - list[i]; // 5 - 1 = 4 | разница между первым и поледним членом
+                
+                i++;
+
+                if (list[i] + difference != list[i + 1])
+                {
+                    return list[i - 1] + (list[i + 1] - list[i]);
+                }
             }
 
             return 0;
