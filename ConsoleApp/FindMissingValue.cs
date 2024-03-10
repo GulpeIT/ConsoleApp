@@ -53,8 +53,8 @@ namespace ConsoleApp
             for (int i = 0; i < list.ToArray().Length - 1; i++)
             {
                 difference = list[i + 1] - list[i];
-
-
+                definition = list[i] + difference;
+            
             }
 
             return 0;
