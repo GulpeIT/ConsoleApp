@@ -35,7 +35,7 @@ namespace ConsoleApp
     {
         public int FindMissing(List<int> list)
         {
-            for (int i = 0; i < list.ToArray().Length - 1;)
+            for (int i = 0; i < list.Count;)
             {
                 int difference = list[i + 1] - list[i]; // 5 - 1 = 4 | разница между первым и поледним членом
                 

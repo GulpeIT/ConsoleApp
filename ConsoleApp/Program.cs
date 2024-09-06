@@ -8,9 +8,6 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
 
-
-            ValidPhoneNumber phone = new ValidPhoneNumber();
-            Console.WriteLine(phone.IsValidPhoneNumber("(123) 456-7890"));
         }
     }
 }
